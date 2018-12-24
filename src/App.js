@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { withStyles } from '@material-ui/core/styles';
-import Posts from './post/Posts'
+import Posts from './posts/Posts'
 
 const styles = theme => ({
   root: {

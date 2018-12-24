@@ -34,7 +34,6 @@ class NewPosts extends React.Component {
 
     handleChangeBody(event){
         if(event.target.value.length <= 100){
-            console.log(event.target.value)
             this.setState({ 
                 ...this.state,  
                 post: {...this.state.post, body:event.target.value}, 
@@ -61,7 +60,7 @@ class NewPosts extends React.Component {
 
         return (
         <Grid container justify="center" spacing={24}>
-            <Grid item md={10}>
+            <Grid item md={12}>
                 <Paper className={classes.paper}>
                     <TextField
                         id="outlined-name"

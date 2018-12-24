@@ -56,7 +56,7 @@ class Posts extends Component {
                 <div>{
                     postList.map((post) =>{
                         return(
-                            <Post key={post.id} title={post.title} body={post.body}/>)
+                            <Post key={post.id} id={post.id} title={post.title} body={post.body}/>)
                     })
                 }</div>
             )

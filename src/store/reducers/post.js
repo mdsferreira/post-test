@@ -10,7 +10,25 @@ const post = (state = initialState, action) => {
                 ...state,
                 postList: action.payload,
             }
-        }        
+        } 
+        case actionTypes.GET_POST: {
+            return {
+                ...state,
+                post: action.payload,
+            }
+        } 
+        case actionTypes.GET_COMMENTS: {
+            return {
+                ...state,
+                commentList: action.payload,
+            }
+        }      
+        case actionTypes.ADD_POST: {
+            return {
+                ...state,
+                postList: [action.payload, ...state.postList],
+            }
+        }         
         default: {
             return state;
         }
